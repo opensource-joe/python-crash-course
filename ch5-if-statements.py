@@ -387,17 +387,17 @@
 
 # 1. Store the numbers 1 through 9 in a list.
 
-values = list(range(1, 10))
-print(values)
+# values = list(range(1, 10))
+# print(values)
 
 # Loop through the list. Use an if-elif-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
 
-for value in values:
-    if value == 1:
-        print(f"{value}st")
-    elif value == 2:
-        print(f"{value}nd")
-    elif value == 3:
-        print(f"{value}rd")
-    else:
-        print(f"{value}th")
+# for value in values:
+#     if value == 1:
+#         print(f"{value}st")
+#     elif value == 2:
+#         print(f"{value}nd")
+#     elif value == 3:
+#         print(f"{value}rd")
+#     else:
+#         print(f"{value}th")
