@@ -247,6 +247,31 @@
 # --------
 
 # dictionary in a dictionary
+# users = {
+#     'aeinstein': {
+#         'first': 'albert',
+#         'last': 'einstein',
+#         'location': 'princeton',
+#     },
+#     'mcurie': {
+#         'first': 'marie',
+#         'last': 'curie',
+#         'location': 'paris',
+#     },
+#     'jcastle': {
+#         'first': 'joe',
+#         'last': 'castle',
+#         'location': 'washington',
+#     },
+# }
+
+# for username, user_info in users.items():
+#     print(f"\nUsername: {username}")
+#     full_name = f"{user_info['first']} {user_info['last']}"
+#     location = user_info['location']
+    
+# print(f"\tFull name: {full_name.title()}")
+# print(f"\tLocation: {location.title()}")
 
 
 # -------------------------------
@@ -345,3 +370,118 @@
 #         print(f"Thank you for responding, {user.title()}.")
 #     else:
 #         print(f"Please take the favorite language poll, {user.title()}") 
+
+# 6-7. People: Start with the program you wrote for Exercise 6-1 (page 98). Make two new dictionaries representing different people, and store all three dictionaries in a list called people. Loop through your list of people. As you loop through the list, print everything you know about each person.
+
+# person_0 = {'color': 'green', 'points': 5}
+# person_1 = {'color': 'yellow', 'points': 10}
+# person_2 = {'color': 'red', 'points': '15'}
+
+# people = [person_0, person_1, person_2]
+
+# for person in people:
+#     print(person)
+
+# 6-8. Pets: Make several dictionaries, where each dictionary represents a different pet. In each dictionary, include the kind of animal and the owner’s name. Store these dictionaries in a list called pets. Next, loop through your list and as you do, print everything you know about each pet.
+
+# pet_0 = {'type': 'cat', 'gender': 'm'}
+# pet_1 = {'type': 'dog', 'gender': 'f'}
+# pet_2 = {'type': 'snake', 'gender': 'm'}
+
+# pets = [pet_0, pet_1, pet_2]
+
+# for pet in pets:
+#     print(pet)
+
+# 6-9. Favorite Places: Make a dictionary called favorite_places. Think of three names to use as keys in the dictionary, and store one to three favorite places for each person. To make this exercise a bit more interesting, ask some friends to name a few of their favorite places. Loop through the dictionary, and print each person’s name and their favorite places.
+
+# favorite_places = {
+#     'joe': ['san francisco', 'italy'],
+#     'gerard': ['san diego'],
+#     'nick': ['new york', 'fort smith'],
+# }
+
+# for name, locations in favorite_places.items():
+#     print(f"{name.title()}'s favorite places are:")
+#     for place in locations:
+#         print(f"{place.title()}")
+
+# 6-10. Favorite Numbers: Modify your program from Exercise 6-2 (page 98) so each person can have more than one favorite number. Then print each person’s name along with their favorite numbers.
+
+# favorite_numbers = {
+#     'steve': [4, 5],
+#     'joe': [13, 7],
+#     'melissa': [7, 8],
+#     'amy': [5, 9],
+#     'alyson': [2, 10],
+# }
+
+# for name, numbers in favorite_numbers.items():
+#     print(f"{name.title()}: ")
+#     for number in numbers:
+#         print(f"{number}")
+
+# 6-11. Cities: Make a dictionary called cities. Use the names of three cities as keys in your dictionary. Create a dictionary of information about each city and include the country that the city is in, its approximate population, and one fact about that city. The keys for each city’s dictionary should be something like country, population, and fact. Print the name of each city and all of the information you have stored about it.
+
+# cities = {
+#     'san francisco': ['dirty', 'pretty', 'small'],
+#     'washington': ['clean', 'small', 'residential'],
+#     'baltimore': ['dirty', 'loafers', 'water'],
+# }
+
+# for city_name, city_attributes in cities.items():
+#     print(f"{city_name.title()}: ")
+#     for attribute in city_attributes:
+#         print(f"{attribute.title()}")
+
+# 6-12. Extensions: We’re now working with examples that are complex enough that they can be extended in any number of ways. Use one of the example programs from this chapter, and extend it by adding new keys and values, changing the context of the program, or improving the formatting of the output.
+
+# dictionary in a dictionary
+# dictionary in a dictionary
+# users = {
+#     'aeinstein': {
+#         'first': 'albert',
+#         'last': 'einstein',
+#         'location': 'princeton',
+#     },
+#     'mcurie': {
+#         'first': 'marie',
+#         'last': 'curie',
+#         'location': 'paris',
+#     },
+#     'jcastle': {
+#         'first': 'joe',
+#         'last': 'castle',
+#         'location': 'washington',
+#     },
+# }
+
+# for username, user_info in users.items():
+#     print(f"\nUsername: {username}")
+#     full_name = f"{user_info['first']} {user_info['last']}"
+#     location = user_info['location']
+    
+# print(f"\tFull name: {full_name.title()}")
+# print(f"\tLocation: {location.title()}")
+
+# --------
+
+# bonus
+# develop an "if" statement to print "{name}'s favorite languages are" or "{name}'s favorite language is" depending on language value length
+
+favorite_languages = {
+    'jen': ['python', 'rust'],
+    'sarah': ['c'],
+    'edward': ['rust', 'go'],
+    'phil': ['python', 'haskell'],
+    'abe': ['python'],
+}
+
+for language in favorite_languages.values():
+    print(language)
+
+# original working code
+# for name, languages in favorite_languages.items():
+#     print(f"\n{name.title()}'s favorite languages are:")
+#     for language in languages:
+#         print(f"\t{language.title()}")
