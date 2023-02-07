@@ -252,8 +252,18 @@
 # --------
 
 # using arbitrary keyword arguments
+# def build_profile(first, last, **user_info):
+#     """Build a dictionary containing everything we know about a user"""
+#     user_info['first_name'] = first
+#     user_info['last_name'] = last
+#     return user_info
 
+# user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')
+# print(user_profile)
 
+# --------
+
+# see pizza_module.py and make_pizzas.module.py for module explanation
 
 
 # -------------------------------
@@ -426,3 +436,62 @@
 # print("\nFinal lists:")
 # print(messages)
 # print(sent_messages)
+
+# 8-12. Sandwiches: Write a function that accepts a list of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that’s being ordered. Call the function three times, using a different number of arguments each time.
+
+# def make_sandwich(*toppings):
+#     """Print the list of toppings that have been requested"""
+#     print(f"Your sandwich includes the following toppings: {toppings}")
+    
+# make_sandwich('lettuce', 'tomato', 'American cheese')
+# make_sandwich('lettuce', 'tomato', 'pickles')
+# make_sandwich('lettuce', 'tomato', 'mustard')
+
+# 8-13. User Profile: Start with a copy of user_profile.py from page 148. Build a profile of yourself by calling build_profile(), using your first and last names and three other key-value pairs that describe you.
+
+# def build_profile(first, last, **user_info):
+#     """Build a dictionary containing everything we know about a user"""
+#     user_info['first_name'] = first
+#     user_info['last_name'] = last
+#     return user_info
+
+# user_profile = build_profile('joseph', 'castle', location='washington', field='open source software', hobby='running')
+# print(user_profile)
+
+# 8-14. Cars: Write a function that stores information about a car in a dictionary. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Your function should work for a call like this one:
+
+# car = make_car('subaru', 'outback', color='blue', tow_package=True)
+# Print the dictionary that’s returned to make sure all the information was stored correctly.
+
+# def make_car(brand, model, **car_info):
+#     """Build a dictionary containing everything we know about a user"""
+#     car_info['brand'] = brand
+#     car_info['model'] = model
+#     return car_info
+
+# car = make_car('subaru', 'outback', color='blue', tow_package=True)
+# print(car)
+
+# 8-15. Printing Models: Put the functions for the example printing_models.py in a separate file called printing_functions.py. Write an import statement at the top of printing_models.py, and modify the file to use the imported functions.
+
+# see printing_functions.py and print_models.py
+
+# 8-16. Imports: Using a program you wrote that has one function in it, store that function in a separate file. Import the function into your main program file, and call the function using each of these approaches:
+
+# import module_name
+# from module_name import function_name
+# from module_name import function_name as fn
+# import module_name as mn
+# from module_name import *
+
+# see pizza_module.py and make_pizzas_module.py
+
+# 8-17. Styling Functions: Choose any three programs you wrote for this chapter, and make sure they follow the styling guidelines described in this section.
+
+# 1. Functions should have descriptive names, and these names should use lowercase letters and underscores. Descriptive names help you and others understand what your code is trying to do. Module names should use these conventions as well.
+# 2. Every function should have a comment that explains concisely what the function does. This comment should appear immediately after the function definition and use the docstring format.
+# 3. If you specify a default value for a parameter, no spaces should be used on either side of the equal sign.
+# 4. The same convention should be used for keyword arguments in function calls.
+# 5. PEP 8 (https://www.python.org/dev/peps/pep-0008) recommends that you limit lines of code to 79 characters so every line is visible in a reasonably sized editor window.
+# 6. If your program or module has more than one function, you can separate each by two blank lines to make it easier to see where one function ends and the next one begins.
+# 7. All import statements should be written at the beginning of a file. The only exception is if you use comments at the beginning of your file to describe the overall program.

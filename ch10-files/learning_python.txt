@@ -1,0 +1,3 @@
+In python you can place functions in modules as a collection and reference for other files.
+In python you can create loops.
+In python you can auto generate lists of numbers.
