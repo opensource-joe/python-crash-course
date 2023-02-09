@@ -1,6 +1,6 @@
 # import statements
 # pathlib import to read contents from a file
-from pathlib import Path
+# from pathlib import Path
 
 # -------------------------------
 
@@ -230,11 +230,32 @@ from pathlib import Path
 
 # 10-6. Addition: One common problem when prompting for numerical input occurs when people provide text instead of numbers. When you try to convert the input to an int, you’ll get a ValueError. Write a program that prompts for two numbers. Add them together and print the result. Catch the ValueError if either input value is not a number, and print a friendly error message. Test your program by entering two numbers and then by entering some text instead of a number.
 
+# print("Give me two numbers and I'll dived them.")
+# print("Enter 'q' to quit.")
 
+# while True:
+#     try:
+#         first_number = input("First number: ")
+#         if first_number == 'q':
+#             break
+#         first_number = int(first_number)
 
-
+#         second_number = input("Second number: ")
+#         if second_number == 'q':
+#             break
+#         second_number = int(second_number)
+        
+#     except ValueError:
+#         print("Only numbers")
+        
+#     else:
+#         answer = first_number / second_number
+#         print(answer)
 
 # 10-7. Addition Calculator: Wrap your code from Exercise 10-5 in a while loop so the user can continue entering numbers, even if they make a mistake and enter text instead of a number.
+
+
+
 
 # 10-8. Cats and Dogs: Make two files, cats.txt and dogs.txt. Store at least three names of cats in the first file and three names of dogs in the second file. Write a program that tries to read these files and print the contents of the file to the screen. Wrap your code in a try-except block to catch the FileNotFound error, and print a friendly message if a file is missing. Move one of the files to a different location on your system, and make sure the code in the except block executes properly.
 
