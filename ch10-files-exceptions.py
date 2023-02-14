@@ -152,6 +152,36 @@
 # failing silently
 #look at word_count_failing_silently.py and alice_new.txt
 
+# --------
+
+# using json.dumps()
+
+# see number_writer.py
+
+# --------
+
+# using json.loads()
+
+# see number_reader.py
+
+# --------
+
+# saving user generated data
+
+# see remember_me.py
+
+# --------
+
+# reading user generated data
+
+# see greet_user.py
+
+# --------
+
+# refactoring
+
+# see remember_me_exception.py files
+
 
 # -------------------------------
 # Exercises
@@ -289,3 +319,17 @@
 # Write a program that reads the files you found at Project Gutenberg and determines how many times the word 'the' appears in each text. This will be an approximation because it will also count words such as 'then' and 'there'. Try counting 'the ', with a space in the string, and see how much lower your count is.
 
 # see count_common_words.py
+
+
+# -------------------------------
+# skipped these remaining exercises to move on to ch11 - testing your code
+
+# 10-11. Favorite Number: Write a program that prompts for the user’s favorite number. Use json.dumps() to store this number in a file. Write a separate program that reads in this value and prints the message “I know your favorite number! It’s _____.”
+
+# 10-12. Favorite Number Remembered: Combine the two programs you wrote in Exercise 10-11 into one file. If the number is already stored, report the favorite number to the user. If not, prompt for the user’s favorite number and store it in a file. Run the program twice to see that it works.
+
+# 10-13. User Dictionary: The remember_me.py example only stores one piece of information, the username. Expand this example by asking for two more pieces of information about the user, then store all the information you collect in a dictionary. Write this dictionary to a file using json.dumps(), and read it back in using json.loads(). Print a summary showing exactly what your program remembers about the user.
+
+# 10-14. Verify User: The final listing for remember_me.py assumes either that the user has already entered their username or that the program is running for the first time. We should modify it in case the current user is not the person who last used the program.
+
+# Before printing a welcome back message in greet_user(), ask the user if this is the correct username. If it’s not, call get_new_username() to get the correct username.
